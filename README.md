@@ -1,12 +1,79 @@
-# React + Vite
+Task Manager App - React + Vite + Tailwind CSS
+A modern task management application built with React, Vite, and Tailwind CSS, featuring state management, API integration, and responsive design.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+✔ Task Management – Add, complete, delete, and filter tasks
+✔ Dark/Light Mode – Theme switching using useContext
+✔ API Integration – Fetch and display data from JSONPlaceholder
+✔ Responsive Design – Works on mobile, tablet, and desktop
+✔ Reusable Components – Buttons, Cards, Navbar, Footer
+✔ Custom Hooks – useLocalStorage for persistent tasks
 
-Currently, two official plugins are available:
+🛠️ Tech Stack
+Frontend: React (Vite)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Styling: Tailwind CSS
 
-## Expanding the ESLint configuration
+Routing: React Router
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+State Management: React Hooks (useState, useEffect, useContext)
+
+API: JSONPlaceholder (for mock data)
+
+📂 Project Structure
+bash
+src/  
+├── components/      # Reusable UI components (Button, Card, Navbar, Footer)  
+├── pages/           # Main views (Home, Tasks, API Data)  
+├── hooks/           # Custom hooks (useLocalStorage, useTheme)  
+├── utils/           # Utility functions (API fetchers, helpers)  
+├── contexts/        # React contexts (ThemeContext)  
+├── App.jsx          # Main app with routes  
+└── main.jsx         # Vite entry point  
+⚙️ Setup & Installation
+1. Clone the Repository
+bash
+git clone https://github.com/juniahsolo/week3plp.git
+cd week3plp
+2. Install Dependencies
+bash
+npm install
+3. Run the Development Server
+bash
+npm run dev
+Open http://localhost:3000 in your browser.
+
+🎨 Styling with Tailwind CSS
+Dark Mode: Toggle between light/dark themes
+
+Responsive: Mobile-first design with sm, md, lg breakpoints
+
+Animations: Smooth transitions for interactive elements
+
+📌 Key Functionality
+🔹 Task Manager
+Add, edit, and delete tasks
+
+Filter tasks: All / Active / Completed
+
+Persists tasks in localStorage
+
+🔹 API Integration
+Fetches posts from JSONPlaceholder
+
+Displays data in a responsive grid
+
+Loading & error states
+
+🔹 Theme Switcher
+Toggle between light/dark mode
+
+Uses useContext for global state
+🙌 Credits
+Built with Vite + React
+
+Styled with Tailwind CSS
+
+Data from JSONPlaceholder
+
+
